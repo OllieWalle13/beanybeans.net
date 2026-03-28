@@ -2,6 +2,7 @@
     "name": "beanybeans",
     "private": true,
     "devDependencies": {
+        "@11ty/eleventy": "^3.1.5",
         "css-loader": "^7.1.4",
         "mini-css-extract-plugin": "^2.10.2",
         "sass": "^1.98.0",
