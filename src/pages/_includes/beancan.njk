@@ -9,10 +9,35 @@
     <link href="{{ nesting }}src/img/favicon.ico" rel="icon" type="image/x-icon" />
   </head>
   <body class="{{ bodyClass }}">
-    <header>Under Construction</header>
+    <header>BeanyBeans</header>
+    <ul>
+        <li><a href="beanybeans.net/blog">Blog</a></li>
+        <li>Media Logs</li>
+          <ul>
+            <li>Movies</li>
+            <li>Books</li>
+            <li>Games</li>
+            <li>Music</li>
+          </ul>
+        <li>Projects</li>
+        <li>Offsite</li>
+          <ul>
+            <li><a href="https://letterboxd.com/olliewalle/">Letterboxd</a></li>
+          </ul>
+    </ul>
     <main>
       {{ content | safe }}
     </main>
-    <footer>Come back soon!</footer>
+    <footer>
+      <!-- Veggie Ring don't touch-->
+      <img src="https://caminus.neocities.org/veggiering/widgetanim.gif" usemap="#veggieanim" alt="Veggie Ring">
+      <map name="veggieanim">
+        <area alt="Previous" title="Previous" href="https://caminus.neocities.org/veggiering/vegring?action=previous" coords="1,13,31,39" shape="rect">
+        <area alt="Next" title="Next" href="https://caminus.neocities.org/veggiering/vegring?action=next" coords="121,16,150,37" shape="rect">
+        <area alt="The Veggie Ring" title="The Veggie Ring" href="https://caminus.neocities.org/veggiering/vegring" coords="117,44,39,0" shape="rect">
+        <area alt="Random" title="Random" href="https://caminus.neocities.org/veggiering/vegring?action=random" coords="137,13,149,2" shape="rect">
+      </map>
+      <!-- end of veggie ring -->
+    </footer>
   </body>
 </html>
