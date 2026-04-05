@@ -7,24 +7,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="{{ nesting }}src/img/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css">
   </head>
   <body class="{{ bodyClass }}">
     <header>BeanyBeans</header>
-    <ul>
-        <li><a href="beanybeans.net/blog">Blog</a></li>
-        <li>Media Logs</li>
-          <ul>
-            <li>Movies</li>
-            <li>Books</li>
-            <li>Games</li>
-            <li>Music</li>
-          </ul>
-        <li>Projects</li>
-        <li>Offsite</li>
-          <ul>
-            <li><a href="https://letterboxd.com/olliewalle/">Letterboxd</a></li>
-          </ul>
-    </ul>
+    {% include 'menu.njk' %}
     <main>
       {{ content | safe }}
     </main>
