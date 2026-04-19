@@ -1,36 +1,61 @@
+.menu {
+    overflow: hidden;
+    background-color: #F9DCE8;
+    font-family: Arial;
+}
+
+/* links in bar */
+.menu a {
+    float: left;
+    font-size: 16px;
+    color: #3A405A;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
 .menuDropdown {
-    position: relative;
+    float: left;
+    overflow:hidden;
+}
+
+.menuDropdown .menuDropdownButton {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #3A405A;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.menu a:hover, .menuDropdown:hover .menuDropdownButton {
+    background-color: #F4CBC6;
 }
 
 .menuDropdownContent {
     display: none;
     position: absolute;
-    background-color: white;
-    min-width: 130px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menuDropdownContent a {
+    float: none;
+    color: #3A405A;
     padding: 12px 16px;
-    color:pink;
-}
-
-.menuDropdown:hover .menuDropdownContent{
+    text-decoration: none;
     display: block;
+    text-align: left;
 }
 
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
+.menuDropdownContent a:hover {
+    background-color: #F9DCE8;
 }
 
-.menu ul li {
-  float: left;
-}
-
-.menu ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.menuDropdown:hover .menuDropdownContent {
+    display:block;
 }
