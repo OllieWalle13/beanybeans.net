@@ -11,3 +11,29 @@
     color: white;
 }
 
+.homeGrid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template:
+        "header header"
+        "sidebar main"
+        "footer footer"
+        / 300px 1fr;
+}
+
+.header { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.main { grid-area: main; }
+.footer {grid-area: footer; }
+
+.sidebar {
+    display: grid;
+    grid-gap: 10px;
+    grid-template:
+        "tomonotchi"
+        "crossword"
+        / 1fr;
+}
+
+.crossword { grid-area: crossword; }
+.tomonotchi { grid-area: tomonotchi; }

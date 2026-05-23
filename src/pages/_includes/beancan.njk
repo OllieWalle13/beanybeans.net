@@ -10,11 +10,29 @@
     <link rel="stylesheet" href="main.css">
   </head>
   <body class="{{ bodyClass }}">
+    <div class="homeGrid-container">
+    <div class="header">
     <header>BeanyBeans</header>
     {% include 'menu.njk' %}
+    </div>
+    <div class="sidebar">
+      <div class ="tomonotchi">
+        <a href="https://tamanotchi.world/33041c"><img src="https://tamanotchi.world/i2/33041" alt="It's tamaNOTchi! Click to feed!"></a>
+      </div>
+      <div class = "crossword">
+        <script type="text/javascript">
+boatload_puzzles_format = 'CompactPortrait';</script>
+<p>Loading <a href="https://www.boatloadpuzzles.com/playcrossword">
+crossword puzzle</a>. One moment please.</p>
+<script type="text/javascript"
+src="//www.boatloadpuzzles.com/Crossword.js"></script>
+
+      </div>
+    </div>
     <main>
       {{ content | safe }}
     </main>
+    <div class="footer">
     <footer>
       <!-- Veggie Ring don't touch-->
       <img src="https://caminus.neocities.org/veggiering/widgetanim.gif" usemap="#veggieanim" alt="Veggie Ring">
@@ -26,5 +44,7 @@
       </map>
       <!-- end of veggie ring -->
     </footer>
+    </div>
+    </div>
   </body>
 </html>
